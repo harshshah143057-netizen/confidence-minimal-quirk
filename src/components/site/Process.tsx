@@ -49,7 +49,7 @@ export function Process() {
                 <span className="text-xl font-semibold leading-snug">{s.title}</span>
               </div>
               {open === i && (
-                <p className="mt-4 max-w-md pl-[3.5rem] text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 max-w-md pl-[3.5rem] text-sm leading-relaxed text-foreground/50">
                   {s.body}
                 </p>
               )}
