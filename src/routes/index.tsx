@@ -100,9 +100,9 @@ function Index() {
       {/* Hero */}
       <section className="shell pb-20 pt-16 md:pb-28 md:pt-24">
         <h1 className="text-[3.25rem] font-semibold leading-[0.95] tracking-tight md:text-[7rem]">
-          <span className="block">Design</span>
-          <span className="block md:pl-[14%]">Build</span>
-          <span className="block md:pl-[28%]">Automate</span>
+          <span className="block text-foreground">Design</span>
+          <span className="block text-foreground/55 md:pl-[14%]">App Dev</span>
+          <span className="block text-foreground md:pl-[28%]">Automate</span>
         </h1>
         <div className="mt-16 grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-end">
           <div className="grid grid-cols-3 gap-6">
