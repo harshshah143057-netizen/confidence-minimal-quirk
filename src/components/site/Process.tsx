@@ -32,8 +32,9 @@ export function Process() {
         <div>
           <p className="section-label">[ How We Work ]</p>
           <h2 className="mt-6 text-3xl font-semibold leading-[1.15] tracking-tight md:text-[2.6rem]">
-            Software and training that take you from{" "}
-            <span className="font-serif italic font-normal">chaos</span> → clarity.
+            <span className="text-foreground/55">Software and training that take you from</span>{" "}
+            <span className="font-serif italic font-normal">chaos</span>{" "}
+            <span className="text-foreground">→ clarity.</span>
           </h2>
         </div>
         <div className="flex flex-col gap-3">
@@ -48,7 +49,7 @@ export function Process() {
                 <span className="text-xl font-semibold leading-snug">{s.title}</span>
               </div>
               {open === i && (
-                <p className="mt-4 max-w-md pl-[3.5rem] text-sm leading-relaxed text-muted-foreground">
+                <p className="mt-4 max-w-md pl-[3.5rem] text-sm leading-relaxed text-foreground/50">
                   {s.body}
                 </p>
               )}

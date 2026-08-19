@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Process } from "@/components/site/Process";
 import { Faq } from "@/components/site/Faq";
+import { Showcase } from "@/components/site/Showcase";
 
 const title = "Prognostic Infotech & Training Center — Web, Mobile & AI Studio";
 const description =
@@ -100,9 +101,9 @@ function Index() {
       {/* Hero */}
       <section className="shell pb-20 pt-16 md:pb-28 md:pt-24">
         <h1 className="text-[3.25rem] font-semibold leading-[0.95] tracking-tight md:text-[7rem]">
-          <span className="block">Design</span>
-          <span className="block md:pl-[14%]">Build</span>
-          <span className="block md:pl-[28%]">Automate</span>
+          <span className="block text-foreground">Design</span>
+          <span className="block text-foreground/55 md:pl-[14%]">App Dev</span>
+          <span className="block text-foreground md:pl-[28%]">Automate</span>
         </h1>
         <div className="mt-16 grid gap-10 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:items-end">
           <div className="grid grid-cols-3 gap-6">
@@ -113,10 +114,11 @@ function Index() {
               </div>
             ))}
           </div>
-          <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-            Prognostic Infotech &amp; Training Center turns complex business problems into scalable
-            web, mobile and AI systems — and stays a perfect place for programmers and learners
-            while doing it.
+          <p className="max-w-md text-sm leading-relaxed text-foreground/50">
+            <span className="text-foreground/80">Prognostic Infotech &amp; Training Center</span>{" "}
+            turns complex business problems into{" "}
+            <span className="text-foreground/80">scalable web, mobile and AI systems</span> — and
+            stays a perfect place for programmers and learners while doing it.
           </p>
         </div>
       </section>
@@ -125,8 +127,11 @@ function Index() {
       <section id="services" className="shell py-24 md:py-32">
         <p className="section-label">[ What We Deliver ]</p>
         <h2 className="mt-6 max-w-4xl text-3xl font-semibold leading-[1.15] tracking-tight md:text-[2.9rem]">
-          Everything we <span className="font-serif italic font-normal">build</span> is designed to
-          save you time, reduce chaos, and lighten the load.
+          <span className="text-foreground">Everything we</span>{" "}
+          <span className="font-serif italic font-normal">build</span>{" "}
+          <span className="text-foreground/55">is designed to save you time,</span>{" "}
+          <span className="text-foreground">reduce chaos,</span>{" "}
+          <span className="text-foreground/55">and lighten the load.</span>
         </h2>
         <div className="mt-14 flex flex-col gap-4">
           {services.map((s) => (
@@ -134,7 +139,7 @@ function Index() {
               key={s.name}
               className="grid gap-4 rounded-2xl bg-surface-2 px-6 py-8 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] md:items-center md:px-10 md:py-10"
             >
-              <p className="max-w-md text-sm leading-relaxed text-muted-foreground">{s.body}</p>
+              <p className="max-w-md text-sm leading-relaxed text-foreground/50">{s.body}</p>
               <h3 className="text-2xl font-semibold tracking-tight md:text-right md:text-[1.75rem]">
                 {s.name}
               </h3>
@@ -142,6 +147,8 @@ function Index() {
           ))}
         </div>
       </section>
+
+      <Showcase />
 
       <Process />
 
