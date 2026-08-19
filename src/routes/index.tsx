@@ -113,10 +113,11 @@ function Index() {
               </div>
             ))}
           </div>
-          <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
-            Prognostic Infotech &amp; Training Center turns complex business problems into scalable
-            web, mobile and AI systems — and stays a perfect place for programmers and learners
-            while doing it.
+          <p className="max-w-md text-sm leading-relaxed text-foreground/50">
+            <span className="text-foreground/80">Prognostic Infotech &amp; Training Center</span>{" "}
+            turns complex business problems into{" "}
+            <span className="text-foreground/80">scalable web, mobile and AI systems</span> — and
+            stays a perfect place for programmers and learners while doing it.
           </p>
         </div>
       </section>
