@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Nav } from "@/components/site/Nav";
 import { Process } from "@/components/site/Process";
 import { Faq } from "@/components/site/Faq";
+import { Showcase } from "@/components/site/Showcase";
 
 const title = "Prognostic Infotech & Training Center — Web, Mobile & AI Studio";
 const description =
