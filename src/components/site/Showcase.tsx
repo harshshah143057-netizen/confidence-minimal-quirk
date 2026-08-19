@@ -4,10 +4,10 @@ import shot3 from "@/assets/edvance-3.jpg.asset.json";
 import shot4 from "@/assets/edvance-4.jpg.asset.json";
 
 const chat = [
-  { side: "in", text: "Sir, my daughter finished 5 chapters in one week 🔥" },
+  { side: "in", text: "Sir, my daughter finished 5 chapters in one week" },
   { side: "out", text: "Love that. Want us to add Gujarati quiz battles next?" },
   { side: "in", text: "Yes please — she competes with her friends daily now" },
-  { side: "out", text: "Rolling it out by tomorrow 🚀" },
+  { side: "out", text: "Rolling it out by tomorrow" },
 ];
 
 const widgets = ["Learn with AI", "Quiz Battles", "Earn Coins & XP", "Leaderboard Rank", "Track Progress"];
